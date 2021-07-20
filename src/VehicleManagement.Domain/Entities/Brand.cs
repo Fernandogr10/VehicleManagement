@@ -12,6 +12,7 @@ namespace VehicleManagement.Domain.Entities
             Name = name;
             _models = new List<Model>();
         }
+        
         public string Name { get; private set; }
         public IReadOnlyCollection<Model> Models => _models.ToArray();
 
