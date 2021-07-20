@@ -41,6 +41,8 @@ namespace VehicleManagement.Api
                     throw;
                 }
             }
+            
+            await host.RunAsync();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

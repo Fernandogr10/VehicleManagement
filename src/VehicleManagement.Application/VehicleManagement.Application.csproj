@@ -5,11 +5,20 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="MediatR" Version="9.0.0" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\VehicleManagement.Domain\VehicleManagement.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Commands\Announcements" />
+      <Folder Include="Commands\Models" />
+      <Folder Include="Queries\Announcements" />
+      <Folder Include="Queries\Models" />
     </ItemGroup>
 
 </Project>

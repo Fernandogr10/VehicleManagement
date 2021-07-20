@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using VehicleManagement.Application.Common.Interfaces;
 using VehicleManagement.Infrastructure.Persistence;
+using VehicleManagement.Infrastructure.Persistence.Repositories;
 
 namespace VehicleManagement.Infrastructure
 {
@@ -16,7 +17,10 @@ namespace VehicleManagement.Infrastructure
                         b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
             services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
-
+            services.AddScoped<ApplicationDbContext>();
+            
+            services.AddScoped<IBrandRepository, BrandRepository>();
+            
             return services;
         }
     }

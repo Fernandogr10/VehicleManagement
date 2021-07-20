@@ -7,13 +7,14 @@ namespace VehicleManagement.Domain.Entities
     {
         private readonly IList<Model> _models;
 
+        public Brand() { }
         public Brand(string name)
         {
             Name = name;
             _models = new List<Model>();
         }
         
-        public string Name { get; private set; }
+        public string Name { get; set; }
         public IReadOnlyCollection<Model> Models => _models.ToArray();
 
         public void AddModel(Model model)
