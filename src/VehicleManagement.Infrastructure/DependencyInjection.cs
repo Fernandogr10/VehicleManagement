@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using VehicleManagement.Application.Common.Interfaces;
+using VehicleManagement.Application.Common.Interfaces.Repositories;
 using VehicleManagement.Infrastructure.Persistence;
 using VehicleManagement.Infrastructure.Persistence.Repositories;
 

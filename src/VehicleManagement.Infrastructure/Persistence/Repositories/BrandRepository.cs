@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using VehicleManagement.Application.Common.Interfaces;
+using VehicleManagement.Application.Common.Interfaces.Repositories;
 using VehicleManagement.Domain.Entities;
 
 namespace VehicleManagement.Infrastructure.Persistence.Repositories

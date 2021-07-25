@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using VehicleManagement.Application.Common.Interfaces;
+using VehicleManagement.Application.Common.Interfaces.Repositories;
 using VehicleManagement.Domain.Entities;
 
 namespace VehicleManagement.Infrastructure.Persistence.Repositories

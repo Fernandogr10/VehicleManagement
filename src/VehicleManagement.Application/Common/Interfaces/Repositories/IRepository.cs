@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using VehicleManagement.Domain.Entities;
 
-namespace VehicleManagement.Application.Common.Interfaces
+namespace VehicleManagement.Application.Common.Interfaces.Repositories
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : Entity
     {

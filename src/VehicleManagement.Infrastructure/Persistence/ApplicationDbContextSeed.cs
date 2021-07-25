@@ -12,6 +12,8 @@ namespace VehicleManagement.Infrastructure.Persistence
         {
             if (!context.Announcements.Any())
             {
+                var seedUser = new User("Developer", "Admin123", "Admin");
+                
                 var seedBrand = new Brand("Ford");
                 var seedModel = new Model("Ka", seedBrand);
                 seedBrand.AddModel(seedModel);
@@ -19,7 +21,8 @@ namespace VehicleManagement.Infrastructure.Persistence
                 var seedVehicle = new Vehicle(seedModel, 2005, "Blue", EFuelType.Alcohol, 10000, 8000, DateTime.Now);
                 var seedAnnouncement = new Announcement(seedVehicle);
                 seedVehicle.AnnounceVehicle(seedAnnouncement);
-                
+
+                context.Users.Add(seedUser);
                 context.Brands.Add(seedBrand);
                 context.Models.Add(seedModel);
                 context.Vehicles.Add(seedVehicle);

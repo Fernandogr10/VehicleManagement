@@ -5,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 using VehicleManagement.Application.Common.Interfaces;
+using VehicleManagement.Application.Common.Interfaces.Repositories;
 using VehicleManagement.Domain.Entities;
 
 namespace VehicleManagement.Application.Queries.Brands

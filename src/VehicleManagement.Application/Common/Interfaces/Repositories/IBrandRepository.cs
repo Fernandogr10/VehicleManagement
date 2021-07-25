@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using VehicleManagement.Domain.Entities;
 
-namespace VehicleManagement.Application.Common.Interfaces
+namespace VehicleManagement.Application.Common.Interfaces.Repositories
 {
     public interface IBrandRepository : IRepository<Brand>
     {
