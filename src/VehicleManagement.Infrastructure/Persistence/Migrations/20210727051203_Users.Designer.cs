@@ -10,7 +10,7 @@ using VehicleManagement.Infrastructure.Persistence;
 namespace VehicleManagement.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210727050107_Users")]
+    [Migration("20210727051203_Users")]
     partial class Users
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
