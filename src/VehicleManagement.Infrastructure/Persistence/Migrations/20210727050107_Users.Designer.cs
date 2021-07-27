@@ -10,8 +10,8 @@ using VehicleManagement.Infrastructure.Persistence;
 namespace VehicleManagement.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210725212043_User")]
-    partial class User
+    [Migration("20210727050107_Users")]
+    partial class Users
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -98,7 +98,7 @@ namespace VehicleManagement.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("VehicleManagement.Domain.Entities.Vehicle", b =>

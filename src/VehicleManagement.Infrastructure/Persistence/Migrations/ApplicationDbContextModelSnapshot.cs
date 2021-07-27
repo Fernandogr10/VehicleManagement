@@ -96,7 +96,7 @@ namespace VehicleManagement.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("VehicleManagement.Domain.Entities.Vehicle", b =>
